@@ -1,0 +1,43 @@
+<nav class="p-5 bg-[#eee]">
+  <div class="max-w-[1400px] mx-auto px-4 flex justify-between items-center gap-2 lg:gap-5">
+    <a routerLink="/" class="logo cursor-pointer">
+      <img src="/images/logo.png" class="w-full h-[40px]" alt="logo" />
+    </a>
+    <ul class="flex space-x-6">
+      <li class="p-[8px] md:p-0 border-b-[1px] border-solid border-[#ccc] last:border-none md:border-none">
+        <a routerLink="/home" routerLinkActive="text-[#888]" class="block text-[18px] w-full text-[#333] transition-colors duration-300 hover:text-[#888] cursor-pointer">Home</a>
+      </li>
+      <li class="p-[8px] md:p-0 border-b-[1px] border-solid border-[#ccc] last:border-none md:border-none">
+        <a routerLink="/about" routerLinkActive="text-[#888]" class="block text-[18px] w-full text-[#333] transition-colors duration-300 hover:text-[#888] cursor-pointer">About</a>
+      </li>
+      <li class="p-[8px] md:p-0 border-b-[1px] border-solid border-[#ccc] last:border-none md:border-none">
+        <a routerLink="/shop" routerLinkActive="text-[#888]" class="block text-[18px] w-full text-[#333] transition-colors duration-300 hover:text-[#888] cursor-pointer">Shop</a>
+      </li>
+      <li class="p-[8px] md:p-0 border-b-[1px] border-solid border-[#ccc] last:border-none md:border-none">
+        <a routerLink="/blog" routerLinkActive="text-[#888]" class="block text-[18px] w-full text-[#333] transition-colors duration-300 hover:text-[#888] cursor-pointer">Blog</a>
+      </li>
+      <li class="p-[8px] md:p-0 border-b-[1px] border-solid border-[#ccc] last:border-none md:border-none">
+        <a routerLink="/contact" routerLinkActive="text-[#888]" class="block text-[18px] w-full text-[#333] transition-colors duration-300 hover:text-[#888] cursor-pointer">Contact</a>
+      </li>
+    </ul>
+    <div class="icons flex space-x-3">
+      <div class="cart">
+        <div routerLink="/cart" class="bg-white rounded-full size-9 flex justify-center items-center relative cursor-pointer">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="absolute top-[-10px] left-[40%] w-5 h-5 rounded-full bg-[#3cb47c] text-white text-sm flex items-center justify-center">0</span>
+        </div>
+      </div>
+      <div class="wishlist">
+        <div routerLink="/wishlist" class="bg-white rounded-full size-9 flex justify-center items-center relative cursor-pointer">
+          <i class="fa-solid fa-heart"></i>
+          <span class="absolute top-[-10px] left-[40%] w-5 h-5 rounded-full bg-[#3cb47c] text-white text-sm flex items-center justify-center">0</span>
+        </div>
+      </div>
+      <div class="user">
+        <div routerLink="/auth/login" class="bg-white rounded-full size-9 flex justify-center items-center cursor-pointer">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
