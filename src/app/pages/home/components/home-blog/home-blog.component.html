@@ -1,0 +1,20 @@
+<section class="blog bg-[#eee] pt-8">
+  <div class="container max-w-[1400px] px-4">
+    <h2 class='text-[25px] font-bold text-[#333] text-center mb-3'>Our Latest Blogs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      @for (blog of blogs; track $index) {
+        <div class="p-5 transition-all duration-[2s] hover:translate-y-[-10px]">
+          <img [src]="blog.imgUrl" alt="blog-img" class='w-full rounded-[6px]' />
+          <div class="mt-2 text-center">
+            <span class='block text-[#777]'>Breakfast</span>
+            <h2 class='text-[20px]'>Sticky Ginger Rice Bowls with Pickled Veg</h2>
+            <div class="flex justify-between items-center gap-5 mt-2">
+              <span class='text-[#777] text-[14px]'>February 19, 2022</span>
+              <span class='text-[#777] text-[14px]'>Post a Comment</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<section class="py-20 bg-[url('/images/about/count-img.png')] bg-cover bg-center bg-fixed relative z-[2]">
+  <div class="container max-w-[1400px] px-4 before:content-[''] before:absolute before:w-full before:h-full before:bg-[#4b675acc] before:inset-0 before:z-[-1]">
+    <div class="flex justify-between items-center gap-5 flex-wrap text-white">
+      @for (num of numbers; track $index) {
+        <div class="box text-center" key={index}>
+          <div class="space-x-2">
+            <span class="text-[50px] font-bold">{{num}}</span>
+            <span class="text-[40px]">+</span>
+          </div>
+          <span class="text-[20px]">Glorious years</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>

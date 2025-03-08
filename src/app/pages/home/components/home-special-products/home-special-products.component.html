@@ -1,0 +1,80 @@
+<section class="py-12">
+  <div class="container max-w-[1400px] px-4">
+    <div class="flex flex-col xl:flex-row ">
+      <div class="left w-full xl:w-1/4 bg-gradient-to-b from-[#f8c144] to-[#3cb47c] p-5 rounded-[10px_0px_0px_10px]">
+        <!-- <ProductInfo /> -->
+        <div class="top text-white mb-5">
+          <h1 class="text-[35px]">Daily Best Sells</h1>
+          <p class="text-[14px] underline">Exclusive Offer - 20% Off</p>
+          <div class="mb-3">
+            <h2 class="text-[25px] mb-1">Specialist in the grocery store from $7.99</h2>
+            <p class="text-[14px]">Only this week. Don’t miss...</p>
+          </div>
+          <button class="p-2 bg-white text-black font-medium rounded-[15px]">Hurry Up!</button>
+        </div>
+        <div class="bottom flex justify-center items-center">
+          <img src="/images/special-products/banner-1.png" alt="banner" class="w-[250px]" />
+        </div>
+        <!-- <ProductInfo /> -->
+      </div>
+      <div class="right w-full xl:w-3/4 bg-[#eee] p-5 rounded-[0px_10px_10px_0px]">
+        <div class="flex justify-center items-center gap-2 mb-8">
+          <div class="p-2 text-[14px] lg:text-[17px] font-bold flex items-center gap-1">
+            <i class="fa-solid fa-tag"></i>
+            TOP ORDER
+          </div>
+          <div class="p-2 text-[14px] lg:text-[17px] font-bold flex items-center gap-1">
+            <i class="fa-solid fa-percent"></i>
+            TOP DISCOUNT
+          </div>
+          <div class="p-2 text-[14px] lg:text-[17px] font-bold flex items-center gap-1">
+            <i class="fa-solid fa-star"></i>
+            TOP RATING
+          </div>
+        </div>
+        <!-- <ProductItem /> -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          @for (product of products; track product.id) {
+            <div class="bg-white p-5 flex flex-col justify-between rounded-[10px]">
+              <div class="head">
+                <span class="block mb-2 bg-[#1494a9] text-white w-fit p-[5px_8px] rounded-[10px]">{{product.num}}</span>
+                <div class="flex items-center justify-center flex-col gap-5">
+                  <img [src]="product.imageUrl" alt="product-img" class="w-[140px] h-[140px]" />
+                  <div class="stars flex gap-1 mb-3 text-[#666]">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="body flex items-center justify-center flex-col">
+                <div class="h-20">
+                  <p class="text-[15px] text-[#777] text-center"> {{product.title}} </p>
+                </div>
+                <span class="block text-green-500 text-[25px] font-bold mb-1"> ${{product.price}} </span>
+                <button class="p-[10px] bg-green-500 text-white mb-3 rounded-[10px] flex items-center gap-2">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  add to cart
+                </button>
+                <div class="btns flex gap-2">
+                  <div class="p-[10px] border-[1px] border-solid border-[#00000017] cursor-pointer transition-colors duration-300 hover:text-[#fdc040]">
+                    <i class="fa-solid fa-eye"></i>
+                  </div>
+                  <div class="p-[10px] border-[1px] border-solid border-[#00000017] cursor-pointer transition-colors duration-300 hover:text-[#fdc040]">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="p-[10px] border-[1px] border-solid border-[#00000017] cursor-pointer transition-colors duration-300 hover:text-[#fdc040]">
+                    <i class="fa-solid fa-shuffle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+        <!-- <ProductItem /> -->
+      </div>
+    </div>
+  </div>
+</section>

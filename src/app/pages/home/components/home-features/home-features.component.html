@@ -1,0 +1,17 @@
+<section class="py-8">
+  <div class="container max-w-[1400px] px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5">
+      @for (feature of features; track $index) {
+        <div class="box relative">
+          <div class="box-img relative">
+            <img [src]="feature.imgUrl" alt="feature-img" class="w-full rounded-[10px]" />
+          </div>
+          <div class="absolute right-[10px] top-[30%]">
+            <p class="text-[#777] mb-2">Everyday Fresh with <br  /> Our Products</p>
+            <a class="text-[14px] text-[#777] cursor-pointer">Go to supplier</a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

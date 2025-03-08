@@ -1,0 +1,35 @@
+<section class="pb-12">
+  <div class="container max-w-[1400px] px-4">
+    <div class="flex items-center flex-col lg:flex-row gap-5 p-5">
+      <div class="left w-full lg:w-1/2">
+        <img src="/images/about/performance.png" alt="performance-img" class="w-full" />
+      </div>
+      <div class="right w-full lg:w-1/2 p-5">
+        <span class="block text-[22px] text-[#3cb47c] mb-3">Our performance</span>
+        <h2 class="text-[35px] text-[#222] mb-3">Your Partner for <br /> e-commerce grocery solution</h2>
+        <p class="text-[17px] text-[#777] mb-3">
+          Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+        </p>
+        <p class="text-[17px] text-[#777]">
+          Pitatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+        </p>
+      </div>
+    </div>
+    <div class="performance-info py-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        @for (item of performanceInfo; track $index) {
+          <div class="box p-5">
+            <h2 class="text-[25px] text-[#222] tracking-wider font-bold mb-3">{{item.title}}</h2>
+            <p class="text-[#777]">
+              Volutpat diam ut venenatis tellus in metus.
+              Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in.
+              ellus eros donec ac odio orci ultrices in.
+            </p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
